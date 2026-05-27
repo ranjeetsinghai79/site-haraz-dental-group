@@ -2,162 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ocean",
-  niche: "dentist",
-  name: "Bright Smile Dental",
-  tagline: "Gentle Care. Beautiful Results.",
-  phone: "(555) 345-6789",
-  phoneHref: "tel:+15553456789",
-  email: "hello@brightsmiledelta.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Mountain House", "Lathrop", "Banta"],
-  license: "CA DDS #54321",
-  since: "2010",
-  google_rating: "4.9",
-  review_count: "418",
-  emergency: true,
-  social: {
-    google: "https://google.com",
-    yelp: "https://yelp.com",
-    facebook: "https://facebook.com",
+    name: "Haraz Dental Group",
+    tagline: "Smile Brighter, Live Healthier",
+    phone: "(559) 554-9791",
+    phoneHref: "tel:+15595549791",
+    email: "info@harazdentalgroup.com",
+    address: "7035 N West Ave, Fresno, CA 93711",
+    city: "Fresno",
+    serviceAreas: ["Fresno, CA"],
+    license: "CA Dental License #XXXXX",
+    since: "2005",
+    google_rating: "4.8",
+    review_count: "2400+",
+    emergency: true,
+    theme: "ember",
+    niche: "dentist",
   },
-},
 
   services: [
-  {
-    icon: "sparkles",
-    title: "Teeth Whitening",
-    desc: "Professional Zoom whitening — up to 8 shades brighter in one visit. Take-home kits also available.",
-    urgent: false,
-  },
-  {
-    icon: "shield-check",
-    title: "Preventive Cleanings",
-    desc: "Comprehensive exams, digital X-rays, and thorough cleanings. Semi-annual visits for a lifetime of healthy teeth.",
-    urgent: false,
-  },
-  {
-    icon: "smile",
-    title: "Dental Implants",
-    desc: "Permanent tooth replacement that looks and feels natural. Single crowns to full arch restorations.",
-    urgent: false,
-  },
-  {
-    icon: "align-center",
-    title: "Invisalign & Braces",
-    desc: "Straighten your smile discreetly. Clear aligners for teens and adults. Free orthodontic consultation.",
-    urgent: false,
-  },
-  {
-    icon: "zap",
-    title: "Emergency Dental",
-    desc: "Severe pain, broken tooth, lost crown? Same-day emergency slots reserved daily. Call us first.",
-    urgent: true,
-  },
-  {
-    icon: "star",
-    title: "Cosmetic Dentistry",
-    desc: "Veneers, bonding, gum contouring, and smile makeovers. Your dream smile is closer than you think.",
-    urgent: false,
-  },
-],
+    { icon: "star", title: "Cosmetic Dentistry", desc: "Enhance your smile with veneers, bonding, and gum recontouring for a confident new you.", urgent: false },
+    { icon: "shield-check", title: "Restorative Dentistry", desc: "Restore function and aesthetics with crowns, fillings, implants, and root canal therapy.", urgent: false },
+    { icon: "thermometer", title: "Gum Disease Treatments", desc: "Combat gum disease with advanced treatments like gingivoplasty and periodontal maintenance.", urgent: false },
+    { icon: "heart", title: "Pediatric Dentistry", desc: "Gentle dental care for children, including sealants, fluoride, and pulp therapy.", urgent: false },
+    { icon: "zap", title: "Emergency Dental Care", desc: "Immediate relief for toothaches, extractions, and other urgent dental needs.", urgent: true },
+    { icon: "wrench", title: "Wisdom Teeth Removal", desc: "Expert and comfortable removal of problematic wisdom teeth.", urgent: false }
+  ],
 
   testimonials: [
-  {
-    name: "Jennifer P.",
-    location: "Tracy, CA",
-    stars: 5,
-    text: "Hadn't been to a dentist in 6 years due to anxiety. Dr. Kim was so patient and gentle. Now I actually look forward to my appointments.",
-  },
-  {
-    name: "Carlos R.",
-    location: "Stockton, CA",
-    stars: 5,
-    text: "Got Invisalign here. The whole process was explained clearly, results were amazing. Staff made every visit easy and fun.",
-  },
-  {
-    name: "Melissa T.",
-    location: "Manteca, CA",
-    stars: 5,
-    text: "Chipped a tooth Saturday morning. They got me in within 2 hours. Fixed it perfectly, matched my other teeth exactly. Incredible service.",
-  },
-],
+    { name: "Yvette Aguilar", location: "Fresno, CA", stars: 5, text: "Britney, the assistant, did a good job answering my questions. The doctor made sure to give me more numbing injections when I felt pain during the extraction. I truly appreciate the care and attention during my visit for a tooth extraction." },
+    { name: "Monique Garcia", location: "Fresno, CA", stars: 5, text: "My experience was Awesome!! I am terrified of the dentist. Arriving receptionist and assistants where kind, compassionate, and caring. Lani did the exam very kind. Highly recommend Haraz Dental Group for their amazing team." },
+    { name: "Viviana Salmeron", location: "Fresno, CA", stars: 5, text: "I came to get my two top wisdom teeth removed. I had a really good experience. The procedure itself was really fast. Brittany was very sweet and talked me through the whole thing, making me feel comfortable and informed." }
+  ],
 
   trustBadges: [
-  "Accepting New Patients",
-  "Most Insurance Accepted",
-  "Anxiety-Free Dentistry",
-  "Digital X-Rays",
-  "Same-Day Emergencies",
-  "Family & Cosmetic Dentist",
-],
+    "Painless Treatments", "Swift Same-Day Solutions", "Flexible Payment Options", "Emergency Dental Care", "Top-Rated Fresno Clinic", "Commitment to Excellence"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 2090,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 16,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.8, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 2400, label: "Happy Patients", suffix: "+", decimals: 0 },
+    { value: 18, label: "Years Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI receptionist books appointments, handles insurance questions, sends reminders — via call, SMS, or WhatsApp. Any hour, any day."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Fast Response", desc: "We prioritize your dental needs with quick scheduling and efficient service." },
+    { icon: "dollar-sign", title: "Upfront Pricing", desc: "Clear, transparent costs with no hidden fees, ensuring you know what to expect." },
+    { icon: "award", title: "Certified Pros", desc: "Our dentists are highly trained and certified, delivering expert care." },
+    { icon: "thumbs-up", title: "Satisfaction Guarantee", desc: "Your comfort and satisfaction are our top priorities for every treatment." },
+    { icon: "phone", title: "AI Reception 24/7", desc: "Our AI assistant is always ready to help with appointments and inquiries." },
+    { icon: "truck", title: "Fully Equipped", desc: "State-of-the-art technology for precise diagnostics and effective treatments." }
+  ],
 
-  formServiceOptions: [
-  "Teeth Whitening",
-  "Preventive Cleanings",
-  "Dental Implants",
-  "Invisalign & Braces",
-  "Emergency Dental",
-  "Cosmetic Dentistry"
-],
+  formServiceOptions: ["Gum Disease Treatments", "Lip Repositioning Surgery", "Gingivoplasty", "Alloderm dental", "Periodontal Maintenance", "Osseous Surgery", "Tori removal", "Pediatric Dentistry", "Sealants", "Fluoride Treatments", "Athletic Mouthguards", "Pulp Therapy", "Restorative Dentistry", "Crowns", "Inlays and Onlays", "Implants", "Filling", "Root Canal Therapy", "Bone Grafting", "Missing Teeth Replacement", "Full Arch Restoration", "TeethXpress", "Cosmetic Dentistry", "Veneers", "Bonding", "Impacted Canines", "Gum Recontouring", "Laser Periodontal Therapy", "Emergency Dental Care", "Tooth Extractions", "TMJ/TMD Therapy", "Dental X-rays and Imaging", "CBCT Scan", "3D Image", "CEPH X-Ray", "Oral Cancer Screening", "Sedation Dentistry", "Wisdom Teeth Removal"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
